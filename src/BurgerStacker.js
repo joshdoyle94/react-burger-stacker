@@ -28,7 +28,7 @@ const BurgerStacker = () => {
     const addToStack = (e) => {
         const ingName = e.target.innerText
         const ingColor = e.target.style.backgroundColor
-        setBurgerIngredients([...burgerIngredients, { name: ingName, color: ingColor }])
+        setBurgerIngredients([{ name: ingName, color: ingColor }, ...burgerIngredients])
     }
 
     // this function will clear the burgerPane, passed as a prop to that component
